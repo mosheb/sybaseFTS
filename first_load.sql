@@ -5,7 +5,7 @@
 --uses tempdb since it is much faster for 1st load
 
 create table tempdb..address_pretoken(id numeric(8,0) identity not null, acct char(10) not null, address varchar(250) not null
-    , ssn char(4) null, rr varchar(5) not null, dept varchar(5) not null)
+    , ssn char(4) null)
 with identity_gap = 20
 go
 
